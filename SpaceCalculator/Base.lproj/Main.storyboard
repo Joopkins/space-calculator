@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11185.3" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.4"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpaceCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,79 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space-bg" translatesAutoresizingMaskIntoConstraints="NO" id="I8j-j9-JrX"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="RJd-wc-0Iz">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="npV-OG-8Tf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="K0I-3y-d4o">
+                                <frame key="frameInset" minX="21" minY="57" width="332" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="332" id="SJ4-YK-ahT"/>
+                                    <constraint firstAttribute="height" constant="91" id="kz4-Hs-nhr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="hTQ-Jz-kgP">
+                                <frame key="frameInset" minX="21" minY="151" width="332" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oCR-yu-3QX">
+                                <frame key="frameInset" minX="43" minY="174" width="289" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGU-mg-KCc">
+                                        <frame key="frameInset" width="83" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="85" id="CWj-po-TYs"/>
+                                            <constraint firstAttribute="width" constant="83" id="vx9-mM-trF"/>
+                                        </constraints>
+                                        <state key="normal" image="7"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjE-Zj-hAq">
+                                        <frame key="frameInset" minX="103" width="83" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="85" id="IJz-Nd-iuM"/>
+                                            <constraint firstAttribute="width" constant="83" id="q4B-Xw-hRd"/>
+                                        </constraints>
+                                        <state key="normal" image="8"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02m-1e-MSu">
+                                        <frame key="frameInset" minX="206" width="83" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="85" id="8Rt-DX-fb6"/>
+                                            <constraint firstAttribute="width" constant="83" id="9FJ-lf-2wo"/>
+                                        </constraints>
+                                        <state key="normal" image="9"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I8j-j9-JrX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3fU-Zp-kGn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RJd-wc-0Iz" secondAttribute="bottom" id="ReU-zP-RSC"/>
+                            <constraint firstAttribute="trailing" secondItem="I8j-j9-JrX" secondAttribute="trailing" id="Rjt-mE-vCz"/>
+                            <constraint firstAttribute="trailing" secondItem="RJd-wc-0Iz" secondAttribute="trailing" id="cKv-6K-S63"/>
+                            <constraint firstItem="I8j-j9-JrX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fNL-Rg-W9Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="I8j-j9-JrX" secondAttribute="bottom" id="gaq-I3-g19"/>
+                            <constraint firstItem="RJd-wc-0Iz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jIz-u6-aPn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="7" width="111" height="114"/>
+        <image name="8" width="111" height="114"/>
+        <image name="9" width="111" height="114"/>
+        <image name="backpanel" width="620" height="938"/>
+        <image name="counter" width="516" height="133"/>
+        <image name="ground" width="888" height="72"/>
+        <image name="space-bg" width="988" height="946"/>
+    </resources>
 </document>
