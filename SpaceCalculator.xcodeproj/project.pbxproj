@@ -14,6 +14,7 @@
 		140DA9D21D6640EF0066C3BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140DA9D01D6640EF0066C3BD /* LaunchScreen.storyboard */; };
 		140DA9DD1D6640EF0066C3BD /* SpaceCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DA9DC1D6640EF0066C3BD /* SpaceCalculatorTests.swift */; };
 		140DA9E81D6640EF0066C3BD /* SpaceCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DA9E71D6640EF0066C3BD /* SpaceCalculatorUITests.swift */; };
+		141C45541D66616300E01E5B /* Minecrafter.Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 141C45531D66616300E01E5B /* Minecrafter.Reg.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		140DA9E31D6640EF0066C3BD /* SpaceCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		140DA9E71D6640EF0066C3BD /* SpaceCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCalculatorUITests.swift; sourceTree = "<group>"; };
 		140DA9E91D6640EF0066C3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		141C45531D66616300E01E5B /* Minecrafter.Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecrafter.Reg.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		140DA9C61D6640EF0066C3BD /* SpaceCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				141C45531D66616300E01E5B /* Minecrafter.Reg.ttf */,
 				140DA9C71D6640EF0066C3BD /* AppDelegate.swift */,
 				140DA9C91D6640EF0066C3BD /* ViewController.swift */,
 				140DA9CB1D6640EF0066C3BD /* Main.storyboard */,
@@ -235,6 +238,7 @@
 				140DA9D21D6640EF0066C3BD /* LaunchScreen.storyboard in Resources */,
 				140DA9CF1D6640EF0066C3BD /* Assets.xcassets in Resources */,
 				140DA9CD1D6640EF0066C3BD /* Main.storyboard in Resources */,
+				141C45541D66616300E01E5B /* Minecrafter.Reg.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +505,7 @@
 				140DA9EE1D6640EF0066C3BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		140DA9EF1D6640EF0066C3BD /* Build configuration list for PBXNativeTarget "SpaceCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +514,7 @@
 				140DA9F11D6640EF0066C3BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		140DA9F21D6640EF0066C3BD /* Build configuration list for PBXNativeTarget "SpaceCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +523,7 @@
 				140DA9F41D6640EF0066C3BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
