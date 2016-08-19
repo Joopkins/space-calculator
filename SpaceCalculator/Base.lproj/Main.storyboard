@@ -220,11 +220,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqU-dJ-GL4">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="0Dy-ea-W5x"/>
+                                    <constraint firstAttribute="width" constant="124" id="OdK-Q1-Mil"/>
+                                </constraints>
+                                <state key="normal" image="clear"/>
+                                <connections>
+                                    <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iJo-Di-CZt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5jQ-32-zbc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="6Fb-1n-gWL"/>
                             <constraint firstItem="5jQ-32-zbc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6b7-Ds-pve"/>
+                            <constraint firstItem="eqU-dJ-GL4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HY5-e3-fq7"/>
                             <constraint firstItem="xml-xL-K2c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LBP-m7-K0y"/>
                             <constraint firstItem="hua-FJ-Vww" firstAttribute="centerX" secondItem="LZn-c4-8Bo" secondAttribute="centerX" id="MQm-B8-7aE"/>
                             <constraint firstItem="LZn-c4-8Bo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NHF-kW-RGV"/>
@@ -232,6 +243,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xml-xL-K2c" secondAttribute="bottom" id="Raw-ko-Ffm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PLt-zg-c46" secondAttribute="bottom" id="SbV-VU-6fU"/>
                             <constraint firstItem="PLt-zg-c46" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vf4-ox-NpU"/>
+                            <constraint firstItem="eqU-dJ-GL4" firstAttribute="top" secondItem="LZn-c4-8Bo" secondAttribute="bottom" constant="8" id="WYZ-yw-5qP"/>
                             <constraint firstItem="Xek-dI-ui5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="apk-tV-bUa"/>
                             <constraint firstItem="LZn-c4-8Bo" firstAttribute="top" secondItem="Xek-dI-ui5" secondAttribute="bottom" constant="6" id="at8-LR-xFr"/>
                             <constraint firstItem="xml-xL-K2c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bPE-M1-xLR"/>
@@ -249,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="35"/>
+            <point key="canvasLocation" x="29.600000000000001" y="34.632683658170919"/>
         </scene>
     </scenes>
     <resources>
@@ -265,6 +277,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>

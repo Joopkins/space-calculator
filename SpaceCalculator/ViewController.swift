@@ -81,6 +81,19 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func clearPressed(_ sender: AnyObject) {
+        clearState()
+    }
+    
+    func clearState() {
+        currentOperation = Operation.Empty
+        runningNumber = ""
+        leftValueString = ""
+        rightValueString = ""
+        result = ""
+        outputLabel.text = "0"
+    }
+    
     func processOperation(operation: Operation) {
         if currentOperation != Operation.Empty {
             if runningNumber != "" {
