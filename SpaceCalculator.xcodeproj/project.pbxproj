@@ -15,6 +15,7 @@
 		140DA9DD1D6640EF0066C3BD /* SpaceCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DA9DC1D6640EF0066C3BD /* SpaceCalculatorTests.swift */; };
 		140DA9E81D6640EF0066C3BD /* SpaceCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DA9E71D6640EF0066C3BD /* SpaceCalculatorUITests.swift */; };
 		141C45541D66616300E01E5B /* Minecrafter.Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 141C45531D66616300E01E5B /* Minecrafter.Reg.ttf */; };
+		141C45561D66662B00E01E5B /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 141C45551D66662B00E01E5B /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		140DA9E71D6640EF0066C3BD /* SpaceCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCalculatorUITests.swift; sourceTree = "<group>"; };
 		140DA9E91D6640EF0066C3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		141C45531D66616300E01E5B /* Minecrafter.Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecrafter.Reg.ttf; sourceTree = "<group>"; };
+		141C45551D66662B00E01E5B /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		140DA9C61D6640EF0066C3BD /* SpaceCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				141C45551D66662B00E01E5B /* btn.wav */,
 				141C45531D66616300E01E5B /* Minecrafter.Reg.ttf */,
 				140DA9C71D6640EF0066C3BD /* AppDelegate.swift */,
 				140DA9C91D6640EF0066C3BD /* ViewController.swift */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141C45561D66662B00E01E5B /* btn.wav in Resources */,
 				140DA9D21D6640EF0066C3BD /* LaunchScreen.storyboard in Resources */,
 				140DA9CF1D6640EF0066C3BD /* Assets.xcassets in Resources */,
 				140DA9CD1D6640EF0066C3BD /* Main.storyboard in Resources */,
